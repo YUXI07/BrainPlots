@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:wpfDemo="clr-namespace:WpfDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <wpfDemo:StepBar Dock="Left"  x:Name="stepBar1" Style="{StaticResource StepStyle}">
+
+
+            <wpfDemo:StepBarItem>
+                <Button
+                    HorizontalContentAlignment="Left"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Click="Button_Click"
+                    Content="第一步"
+                    FontSize="12"
+                    Foreground="Black" />
+            </wpfDemo:StepBarItem>
+            <wpfDemo:StepBarItem>
+                <Button
+                    HorizontalContentAlignment="Left"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Click="Button_Click"
+                    Content="第二步"
+                    FontSize="12"
+                    Foreground="Black"/>
+            </wpfDemo:StepBarItem>
+            <wpfDemo:StepBarItem>
+                <Button
+                    HorizontalAlignment="Left"
+                    HorizontalContentAlignment="Left"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Click="Button_Click"
+                    Content="第三步"
+                    FontSize="12" Foreground="Black" />
+            </wpfDemo:StepBarItem>
+            <wpfDemo:StepBarItem>
+                <Button
+                    HorizontalAlignment="Left"
+                    HorizontalContentAlignment="Left"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Click="Button_Click"
+                    Content="第四步"
+                    FontSize="12"
+                    Foreground="Black"/>
+            </wpfDemo:StepBarItem>
+        </wpfDemo:StepBar>
+
+    </Grid>
+</Window>
